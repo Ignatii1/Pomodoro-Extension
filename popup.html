@@ -1,0 +1,27 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Pomodoro Timer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Pomodoro Timer</h1>
+    <div id="timer">25:00</div>
+    <progress id="progress" value="100" max="100"></progress>
+    <div class="input-container">
+      <label for="time-input">Minutes:</label>
+      <input type="number" id="time-input" min="1" max="60" value="25" />
+    </div>
+    <div class="button-container">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+    <div id="stats">
+      <p>Completed Pomodoros: <span id="completed">0</span></p>
+      <p>Total Time: <span id="total-time">0</span> minutes</p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
